@@ -1,0 +1,11 @@
+# Process ve Thread 
+--------------------------------
+Process --> Bellekte çalışan bağımsız program
+Thread ---> Bir processin içinde çalışan daha küçük yürütme birimi
+
+Processler birbirinden izole çalışırken, threadler aynı ortamı paylaşır
+
+Process: Uygulamanın kendisi bir process’tir.
+Thread 1: Şarkı çalma işini yapar.
+Thread 2: Kullanıcı arayüzünü yönetir.
+Thread 3: İnternetten müzik indirir.

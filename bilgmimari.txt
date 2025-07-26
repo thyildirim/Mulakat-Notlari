@@ -4,25 +4,55 @@
 2) Harvard Mimarisi 2 ayrı bellek ve 2 ayrı veri yolundan oluşur, mikrodenetleyicilerde oluyor daha çok
 
 # Instruction Cycle 
+----------------------------
 1) Fetch -> getir 
 2) Decode -> çözümle
 3) Execute -> yürüt
 
 # Register
+--------------------------
 Pcdeki registerler cpu'nun içinde bulunan küçük ve hızlı hafıza alanlarıdır
 
 # Cache Memory ve Bellek Hiyerarşisi
+------------------------------------------------
 Cache memory, cpuya en yakın çok hızlı ama düşük boyutlu bellektir. Ana bellekten sık sık veri alır ve saklar, L1 en hızlısıdır. L2 ve L3 daha yavaş ama daha büyüktür
 
 REGİSTER > CACHE > RAM > SSD > HDD 
 hız ve kapasiye açısından en hızlıdan en yavaşa sıralama
 
 # Pipelining
-Komutların üst üste bindirilerek paralel şekilde işlenmesi
-
+------------------------------
+Pipeline (boru hattı) bilgisayar mimarisinde, işlemcinin (CPU) bir komutu işlerken onu adım adım bölerek eşzamanlı olarak birden fazla komut üzerinde çalışmasını sağlayan bir tekniktir. 
 Amaç: Verimliliği artırmak.
-
 Sorunlar: Veri çatışması (data hazard), kontrol çatışması (branch prediction), yapısal çatışma.
 
 # Interrupt Mekanizması
+---------------------------------
 CPU çalışırken önemli bir olay olduğunda işlem akışı kesilir.
+
+
+# RAM Ve Cache
+-----------------
+# RAM
+    işlemci ile sabit disk arasında bir geçici depolama alanlarıdır
+    cacheden yavaş diskten hızlı
+    pc kapanınca veriler silinir
+    programlar işletim sistemi ve aktif işlemler ramde tutulur
+
+# Cache
+    İşlemcinin en sık yaptığı verilere çok hızlı erişmeyi sağlar
+    Çok hızlı, ramden hızlı
+    boyutu rame göre çok kucuk
+
+
+
+# Assembly ile yüksek seviyeli dil farkı 
+-------------------------------------------
+okunabilirlikte         Assembly zor , ysd kolay
+donanım kontrolu        Assembly çok yüksek, ysd orta - düşük
+performans              Assembly çok yüksek,  yüksek 
+taşınabilirlik          Assembly düşük, ysd yüksek
+geliştirme süresi       Assembly uzun,  ysd kısa
+kullanım alanı          Assembly sistem seviyesi,  ysd uyg geliştirme
+
+
