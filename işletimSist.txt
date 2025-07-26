@@ -9,3 +9,72 @@ Process: Uygulamanın kendisi bir process’tir.
 Thread 1: Şarkı çalma işini yapar.
 Thread 2: Kullanıcı arayüzünü yönetir.
 Thread 3: İnternetten müzik indirir.
+
+
+# Deadlock nedir ??
+-------------------------------------
+Deadlock, işlemlerin birbirinin kaynaklarını bekleyip sonsuza kadar kilitlenmesi durumudur.
+
+🔑 Deadlock’un 4 Temel Koşulu (Coffman Koşulları)
+
+Deadlock ancak aşağıdaki 4 koşul aynı anda varsa gerçekleşir:
+
+    Mutual Exclusion (Karşılıklı Dışlama): Kaynaklar paylaşılamaz, bir anda sadece bir işlem kullanabilir.
+
+    Hold and Wait (Bekleyerek Tutma): Bir işlem kaynak tutarken başka kaynak için bekler.
+
+    No Preemption (Zorla Alınamama): Kaynaklar zorla alınamaz, ancak işlem kendi bırakabilir.
+
+    Circular Wait (Dairesel Bekleme): İşlemler birbirlerinin kaynaklarını döngüsel olarak bekler.
+
+
+⚙️ Pratikte Deadlock Önleme Yöntemleri:
+
+    Timeout (Zaman Aşımı): Kaynak bekleme süresi sınırlanır, süresi dolunca işlem iptal edilir.
+
+    Deadlock Detection (Tespit) ve Recovery (Kurtarma): Sistem deadlock oluştuğunu algılar, sonra bazı işlemleri sonlandırır veya kaynakları zorla alır.
+
+    Avoidance Algorithms (Kaçınma Algoritmaları): Banker’s Algorithm gibi algoritmalar, kaynak isteklerini değerlendirip, deadlock’a sebep olacak işlemleri reddeder.
+
+    Lock Ordering (Kilitleme Sırası): Kaynaklar belirli bir sırayla kilitlenir, böylece döngüsel bekleme olmaz.
+
+
+
+# Scheduling (Zamanlama) algoritmaları
+-----------------------------------------------------------
+
+1. FCFS (First Come First Serve) – İlk Gelen İlk İşlenir
+
+    İşler sırayla, gelen sıra ile yapılır.
+
+    Kim önce gelirse önce o işlem yapılır.
+
+    Basit ama bekleme süresi uzun olabilir.
+
+2. SJF (Shortest Job First) – En Kısa İş Öncelikli
+
+    En kısa sürecek işlem önce yapılır.
+
+    Bekleme süresini azaltır ama uzun işleri bekletebilir.
+
+3. Round Robin (RR) – Sırasıyla Her İşe Kısa Süre Verilir
+
+    İşlere sırayla küçük zaman dilimleri (time quantum) verilir.
+
+    Süre bitince sıradaki iş devam eder.
+
+    Adil ve interaktif sistemler için uygun.
+
+4. Priority Scheduling – Önceliklere Göre İşlem
+
+    İşlere öncelik verilir.
+
+    Önceliği yüksek olan önce yapılır.
+
+    Aynı öncelikte olanlar FCFS’ye göre sıralanır.
+
+5. Multilevel Queue – Çok Katmanlı Kuyruk
+
+    İşler öncelik veya türüne göre farklı kuyruklara ayrılır.
+
+    Kuyruklar farklı zamanlama algoritmaları kullanabilir.
