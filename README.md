@@ -11,18 +11,9 @@
 # Register
 Pcdeki registerler cpu'nun içinde bulunan küçük ve hızlı hafıza alanlarıdır
 
-#  Algoritmanın Önemi
+# Cache Memory ve Bellek Hiyerarşisi
+Cache memory, cpuya en yakın çok hızlı ama düşük boyutlu bellektir. Ana bellekten sık sık veri alır ve saklar, L1 en hızlısıdır. L2 ve L3 daha yavaş ama daha büyüktür
 
-1) Kod hızlı verimli olur
-2) Karmaşık problemleri daha kolay ve sade çözmeyi sağlar
-
-
-# Array
-
-Aynı türdeki verileri ardışık olarak bellekte tutar
-Sabit boyutlu, indexle erişilir
-Bellekte arka arkaya tutulur
-
-Arama = O(n) <br>
-Ekle/Sil = O(n)
+REGİSTER > CACHE > RAM > SSD > HDD 
+hız ve kapasiye açısından en hızlıdan en yavaşa sıralama
 
