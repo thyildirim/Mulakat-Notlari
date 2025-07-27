@@ -1,0 +1,36 @@
+1. Sıralama (Sorting) Algoritmaları
+
+    Bubble Sort: Yan yana olan elemanları karşılaştırarak büyük olanı sona doğru iten basit bir sıralama algoritmasıdır.
+
+    Selection Sort: Her adımda dizideki en küçük elemanı seçip başa yerleştirir.
+
+    Insertion Sort: Her elemanı doğru konumuna yerleştirerek sıralayan algoritmadır.
+
+    Merge Sort: Diziyi ikiye bölüp sıralayıp birleştiren, verimli bir divide-and-conquer algoritmasıdır.
+
+    Quick Sort: Bir pivot seçip küçükleri sola, büyükleri sağa yerleştirerek çalışan hızlı sıralama algoritmasıdır.
+
+    Heap Sort: Diziyi önce bir heap yapısına dönüştürüp en büyük öğeyi çıkararak sıralar.
+
+    Counting Sort: Sayıların frekanslarını sayarak sabit aralıktaki verileri çok hızlı sıralar.
+
+    Radix Sort: Sayıları basamak basamak sıralayarak çalışan sayısal sıralama algoritmasıdır.
+
+    Bucket Sort: Elemanları aralıklarına göre gruplara (bucket) ayırıp her grubu sıralayarak sonuç üretir.
+
+    Shell Sort: Insertion Sort’un geliştirilmiş hali olup uzak elemanları karşılaştırarak sıralar.
+
+🔹 2. Arama (Searching) Algoritmaları
+
+    Linear Search: Dizideki her elemanı sırayla kontrol ederek aranan öğeyi bulur.
+    
+    Binary Search: Sıralı dizide ortadaki elemanla karşılaştırma yaparak aramayı yarıya indirir
+
+
+🔹 6. Böl ve Fethet (Divide and Conquer)
+
+    Merge Sort: Diziyi parçalayıp sıralayıp birleştirir.
+
+    Quick Sort: Pivot seçerek diziyi parçalar ve sıralar.
+
+    Binary Search: Diziyi ikiye bölerek arama yapar.
