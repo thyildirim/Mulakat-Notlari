@@ -34,3 +34,37 @@
     Quick Sort: Pivot seçerek diziyi parçalar ve sıralar.
 
     Binary Search: Diziyi ikiye bölerek arama yapar.
+
+
+
+1. Arama Algoritmaları
+--------------------------------------------
+Algoritma	        En İyi Durum	        Ortalama Durum	            En Kötü Durum	
+
+Linear Search	        O(1)                    O(n)	                    O(n)	
+
+Binary Search	        O(1)	                O(log n)	                O(log n)	
+
+2. Sıralama Algoritmaları
+-----------------------------------
+Algoritma	            En İyi Durum	             Ortalama Durum	            En Kötü Durum	
+
+Bubble Sort	                O(n)	                      O(n²)	                    O(n²)	
+
+Selection Sort	            O(n²)	                      O(n²)	                    O(n²)	
+
+Insertion Sort	            O(n)	                      O(n²)	                    O(n²)	
+
+Merge Sort	              O(n log n)	                O(n log n)	                O(n log n)	
+
+Quick Sort	              O(n log n)	                O(n log n)	                O(n²)	    
+
+Heap Sort	              O(n log n)	                O(n log n)	               O(n log n)	
+
+Counting Sort	           O(n + k)	                    O(n + k)	                O(n + k)	
+
+Radix Sort	                O(nk)	                    O(nk)	                    O(nk)	
+
+Bucket Sort	                O(n + k)	                O(n + k)	                O(n²) (kötü bucket dağılımı)
+
+Shell Sort	            O(n log n) veya O(n^(3/2))	Ortalama O(n^(3/2))	            En kötü O(n²)
