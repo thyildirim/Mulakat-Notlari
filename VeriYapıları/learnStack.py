@@ -56,3 +56,24 @@ if __name__ == "__main__":
     s.clear()
     print("Stack temizlendi:", s)
     print("Stack boş mu? ", s.is_empty())
+
+
+
+'''
+push(item) → ekleme
+
+pop() → çıkarma
+
+peek() → bakma
+
+is_empty() → boş kontrolü
+
+size() → boyut
+
+clear() → tümünü temizleme
+
+search(item) → arama
+
+__str__() → yazdırma kolaylığı için string dönüşümü
+
+'''
