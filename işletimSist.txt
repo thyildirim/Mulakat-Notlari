@@ -78,3 +78,26 @@ Deadlock ancak aşağıdaki 4 koşul aynı anda varsa gerçekleşir:
     İşler öncelik veya türüne göre farklı kuyruklara ayrılır.
 
     Kuyruklar farklı zamanlama algoritmaları kullanabilir.
+
+
+# Context switching
+----------------------------------
+İşletim sisteminde bir işlemden diğerine geçerken eski işlemin durumunu kaydedip yeni işlemin durumunun yüklenmesidir.
+
+Bir işlemci aynı anda yalnızca bir işlem/thread çalıştırabilir (tek çekirdekli bir sistemde). Ancak birden çok program çalıştırılmak istendiğinde işletim sistemi:
+
+    Mevcut işlemi duraklatır (kaldığı yeri unutmamak için bağlamını kaydeder),
+
+    Yeni işlemin bağlamını yükler (o işlem kaldığı yerden devam eder).
+
+Bu geçişe Context Switching denir.
+
+
+# Sanal Bellek
+------------------------------------
+fiziksel belleğin(ram) yetmediği durumda sabit diskin geçici ram görevi görmesidir
+
+📦 Nasıl Çalışır?
+İşlem RAM'de yer kalmadığında,
+Az kullanılan veya şu an aktif olmayan veriler disk üzerinde ayrılmış "pagefile" veya "swap" alanına" taşınır.
+Bu alan, RAM gibi davranır ama daha yavaştır.
