@@ -101,4 +101,3 @@ fiziksel belleğin(ram) yetmediği durumda sabit diskin geçici ram görevi gör
 İşlem RAM'de yer kalmadığında,
 Az kullanılan veya şu an aktif olmayan veriler disk üzerinde ayrılmış "pagefile" veya "swap" alanına" taşınır.
 Bu alan, RAM gibi davranır ama daha yavaştır.
-
