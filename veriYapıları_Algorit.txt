@@ -1,0 +1,184 @@
+# Array
+--------------------------------
+Sabit boyutlu (statik) veya dinamik olabilir.
+Rastgele erişim (random access) sağlar.
+Bellekte ardışık yer kaplar.
+
+
+Erişim (Access)	O(1)
+Arama (Search)	O(n)
+Ekleme (Insert)	O(n)
+Silme (Delete)	O(n)
+
+
+
+
+# Stack 
+---------------------------
+    Çalışma mantığı: LIFO – Last In, First Out (Son giren ilk çıkar)
+
+    İşlemler:
+
+        push() → Eleman ekleme
+
+        pop() → Eleman çıkarma
+
+        peek() → En üstteki elemana bakma
+
+
+Push	O(1)
+Pop	O(1)
+Peek	O(1)
+Arama	O(n)
+
+
+
+# Queue
+-------------------------
+    Çalışma mantığı: FIFO – First In, First Out (İlk giren ilk çıkar)
+
+    İşlemler:
+
+        enqueue() → Eleman ekleme
+
+        dequeue() → Eleman çıkarma
+
+        peek() → En öndeki elemana bakma
+
+
+# Linked List
+----------------------------
+    Linked List, düğümlerden (node) oluşur. 
+    Her düğüm hem veriyi hem de bir sonraki düğümün adresini (pointer) tutar.
+
+Türleri:
+
+    Singly Linked List: Sadece ileriye doğru bağlantı.
+
+    Doubly Linked List: Hem ileri hem geri bağlantı.
+
+    Circular Linked List: Son düğüm ilk düğüme işaret eder.
+
+Avantajları:
+
+    Dinamik bellek kullanımı → Belleği verimli kullanır.
+
+    Eleman ekleme/çıkarma işlemleri hızlıdır (özellikle dizinin başında/ortasında).
+
+    Boyutu değiştirilebilir.
+
+Dezavantajları:
+
+    Rastgele erişim yoktur (index ile erişmek zor).
+
+    Bellek kullanımı dizilere göre fazladır (çünkü pointer da tutulur).
+
+
+Erişim	    O(n)	 --> Singly linked list big O Notasyonu
+Arama	    O(n)	
+Başa Ekleme	O(1)	
+Sona Ekleme	O(n)	
+Silme (baş/son)	O(1)/O(n)
+
+
+
+
+# Binary Search Tree
+--------------------------------
+    Her düğümün en fazla 2 çocuğu vardır.
+
+    Ekleme: Yeni değer, büyüklüğüne göre uygun yere yerleştirilir.
+
+    Arama: Değer, kökten başlayarak karşılaştırmalarla bulunur.
+
+    Silme: 3 durum olabilir (yaprak, tek çocuk, 2 çocuk).
+
+Sıralama işlemleri için ideal (in-order traversal → sıralı veri)
+
+Ekleme	O(log n)	O(n)
+Arama	O(log n)	O(n)
+Silme	O(log n)	O(n)
+
+
+# AVL Tree
+------------------------------
+Dengeli BST'dir her durumda O(log n) 
+
+
+
+# Big O Notasyonu
+----------------------------------
+    Algoritmanın verimliliği ve karmaşıklıgını gösteren matematiksel değer
+
+
+
+
+
+# Hash Table
+--------------------------------------
+Verileri anahtar-değer (key-value) şeklinde depolayan veri yapısı.
+
+Anahtar, bir hash fonksiyonu ile dizi indeksine dönüştürülür.
+
+Hash Table	O(1)	O(1)	O(1) – Çakışma olursa O(n)
+
+Ortalama durumda çok hızlı (O(1))
+
+En kötü durumda yavaş olabilir (O(n))
+
+# Map
+---------------------
+Map, anahtar-değer (key-value) çiftlerini saklayan bir soyut veri yapısıdır.
+Anahtar üzerinden değere ulaşım hızlıdır.
+Map (HashMap)	O(1)	O(1)	O(1) (ortalama) (EKLEME SİLME VE ARAMA NOTASYONU)
+
+
+#Dictionary 
+--------------------------
+Python’daki dict, Map'in bir uygulamasıdır.
+
+Anahtar-değer yapısı kullanır.
+
+Hızlı arama, ekleme ve silme işlemleri sunar.
+
+Ekleme O(1)	
+Silme O(1)	
+Arama O(1)
+
+
+# Set
+---------------------
+Tekil (unique) elemanları saklar.
+Sıra önemli değildir.
+
+Duplicate filtreleme
+Küme işlemleri (kesişim, birleşim, fark)
+
+
+# Graph
+---------------------------
+Düğümler (nodes/vertices) ve bağlantılar (edges) içerir.
+
+Yönlü veya yönsüz olabilir.
+
+Ağırlıklı veya ağırlıksız olabilir.
+
+İki temel gösterim vardır:
+
+    Adjacency List (Listeyle tutulur)
+
+    Adjacency Matrix (2D matrisle tutulur)
+
+
+# Heap
+------------------------
+Tam ikili ağaçtır (complete binary tree).
+
+Her düğüm, çocuklarından büyüktür veya küçüktür.Genellikle öncelik sırası (priority queue) için kullanılır.
+🎯 Kullanım:
+
+    CPU Scheduling
+
+    Kısıtlı en küçük/en büyük değer bulma
+
+    Dijkstra algoritması
